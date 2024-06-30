@@ -146,4 +146,3 @@ Hint: BFS/Store path
 ## D35 School Dance
 
 ## D36 Distinct Routes
-
