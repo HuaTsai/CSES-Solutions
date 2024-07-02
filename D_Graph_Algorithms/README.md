@@ -126,13 +126,17 @@ Syrjälä's network has $n$ computers and $m$ connections. Your task is to find 
 
 ### Input
 
-The first input line has two integers $n$ and $m$: the number of computers and connections. The computers are numbered $1,2,\dots,n$. Uolevi's computer is $1$ and Maija's computer is $n$.
+The first input line has two integers $n$ and $m$: the number of computers and connections.  
+The computers are numbered $1,2,\dots,n$. Uolevi's computer is $1$ and Maija's computer is $n$.
+
 Then, there are $m$ lines describing the connections. Each line has two integers $a$ and $b$: there is a connection between those computers.
+
 Every connection is between two different computers, and there is at most one connection between any two computers.
 
 ### Output
 
 If it is possible to send a message, first print $k$: the minimum number of computers on a valid route. After this, print an example of such a route. You can print any valid solution.
+
 If there are no routes, print "IMPOSSIBLE".
 
 ### Constraints
@@ -164,6 +168,47 @@ Output:
 Hint: BFS
 
 ## D05 Building Teams
+
+There are $n$ pupils in Uolevi's class, and $m$ friendships between them. Your task is to divide the pupils into two teams in such a way that no two pupils in a team are friends. You can freely choose the sizes of the teams.
+
+### Input
+
+The first input line has two integers $n$ and $m$: the number of pupils and friendships. The pupils are numbered $1,2,\dots,n$.
+
+Then, there are $m$ lines describing the friendships. Each line has two integers $a$ and $b$: pupils $a$ and $b$ are friends.
+
+Every friendship is between two different pupils. You can assume that there is at most one friendship between any two pupils.
+
+### Output
+
+Print an example of how to build the teams. For each pupil, print "1" or "2" depending on to which team the pupil will be assigned. You can print any valid team.
+
+If there are no solutions, print "IMPOSSIBLE".
+
+### Constraints
+
+- $1 \le n \le 10^5$
+- $1 \le m \le 2 \cdot 10^5$
+- $1 \le a,b \le n$
+
+### Example
+
+Input:
+
+```
+5 3
+1 2
+1 3
+4 5
+```
+
+Output:
+
+```
+1 2 2 1 2
+```
+
+Hint: BFS/DFS, hard problem, edge conditions
 
 ## D06 Round Trip
 
